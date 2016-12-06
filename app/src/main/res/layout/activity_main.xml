@@ -21,5 +21,32 @@
         android:shadowDx="3"
         android:shadowDy="3"
         android:shadowRadius="3"
+        android:id="@+id/header"
         android:shadowColor="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add A Topic..."
+        android:gravity="center"
+        android:textColorHint="@color/colorContrast"
+        android:id="@+id/topicCreation"
+        android:layout_below="@+id/header"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addTopicButton"
+        android:text="Add Topic"
+        android:background="@color/colorPrimaryLight"
+        android:layout_below="@+id/topicCreation"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's Chat"
+        android:textColor="@color/primaryText"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/topicActivityButton"/>
 </RelativeLayout>
